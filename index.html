@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh Kumar - Front End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Poppins:wght@100;200&family=Roboto+Slab&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body class="" style="background-color: #161e3c; font-family: Poppins,sans-serif;">
+    <div class="d-lg-block d-none">
+        <div style="background-color: #14235e; font-weight: 900;" class="py-3 align-items-center">
+            <nav class="d-flex justify-content-between align-items-center px-4">
+                <h3 class="m-0 fw-bold">Rajesh's Portfolio</h3>
+                <div style="background-color: #172a74;" class=" p-2 rounded-2">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active text-light" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-light" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">About</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-light" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Projects</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-light" id="pills-disabled-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                                aria-selected="false">Contact Me</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <div class="d-flex align-items-center justify-content-center">
+
+                    <div class="col-4 rounded-3 m-0 fw-bold">
+                        <div class="d-flex justify-content-center">
+                            <img style="height: 170px;" class="rounded-circle text-center border border-primary p-2" src="myimage.JPG" alt="">
+
+                        </div>
+                        <h3 class="fw-bold">Hii there,</h3>
+                        <h4 class="fw-bold">My name is <span style="color: #9826bd;">Rajesh Kumar,</span></h4>
+                        <h4 class="fw-bold">I am a passionate <span style="color: #9826bd;" id="element"
+                                class="fw-bold"></span>
+                        </h4>
+                        <h6 class="border border-primary p-2 px-3 rounded-3 mt-4">Click on About to know more about me
+                        </h6>
+                    </div>
+                    <div class="m-0 d-lg-flex d-none align-items-center justify-content-center">
+                        <img style="height: 500px;" src="back.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                <div class="container my-3 mb-5">
+                    <div>
+                        <div class="text-center">
+                            <img style="height: 60px;" src="emoji2.gif" alt="">
+                        </div>
+                        <p>So Good to see you here,</p>
+                        <p class="m-0">My Name is Rajesh Kumar, I have completed my high and higher secondary studies
+                            from
+                            <strong> Govt. School Of Excellence, Narsinghpur</strong>, I've gained <strong>
+                                88.5%</strong>
+                            in 10th and <strong>81.6%</strong> in 12th.
+                        </p>
+                        <p> After that I've completed my engineering in <strong> Computer Science </strong> from
+                            <strong>
+                                Shri Ram Institute of Science &
+                                Technologies, Jabalpur</strong>
+                            During my academics
+                            I've worked on
+                            many
+                            technologies.
+                        </p>
+                        <p class="m-0">
+                            <span style="color: white;" class="fw-bold mt-1"> My technical skills includes</span>
+                        </p>
+                    </div>
+                    <div class="border py-4 px-0 rounded-3 border-primary mt-4">
+                        <div class="container1">
+                            <div class="card rounded-circle">
+                                <div class="percent" style="--cir:#04fc43;--num:80">
+                                    <div class="dot">
+
+                                    </div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2 class="m-0">80 <span>%</span></h2>
+                                        <p class="m-0">HTML</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-circle">
+                                <div class="percent" style="--cir:#04fc43;--num:70">
+                                    <div class="dot">
+
+                                    </div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2 class="m-0">70 <span>%</span></h2>
+                                        <p class="m-0">CSS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-circle">
+                                <div class="percent" style="--cir:#04fc43;--num:60">
+                                    <div class="dot">
+
+                                    </div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2 class="m-0">60 <span>%</span></h2>
+                                        <p class="m-0">Java Script</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-circle">
+                                <div class="percent" style="--cir:#04fc43;--num:65">
+                                    <div class="dot">
+
+                                    </div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2 class="m-0">65 <span>%</span></h2>
+                                        <p class="m-0">React.js</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container1 mt-5">
+                            <div class="card rounded-circle">
+                                <div class="percent" style="--cir:#04fc43;--num:85">
+                                    <div class="dot">
+
+                                    </div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2 class="m-0">85 <span>%</span></h2>
+                                        <p class="m-0">Bootstrap</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-circle">
+                                <div class="percent" style="--cir:#04fc43;--num:60">
+                                    <div class="dot">
+
+                                    </div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2 class="m-0">60 <span>%</span></h2>
+                                        <p class="m-0">C</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-circle">
+                                <div class="percent" style="--cir:#04fc43;--num:65">
+                                    <div class="dot">
+
+                                    </div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2 class="m-0">65 <span>%</span></h2>
+                                        <p class="m-0">C++</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-circle">
+                                <div class="percent" style="--cir:#04fc43;--num:55">
+                                    <div class="dot">
+
+                                    </div>
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2 class="m-0">55 <span>%</span></h2>
+                                        <p class="m-0">SQL</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0">
+                <div class="container">
+                    <div class="text-center mt-3">
+                        <img style="height: 60px;" src="emoji2.gif" alt="">
+                    </div>
+                    <p>You came very far, thanks</p>
+                    <h5>Here's the list of some of my projects</h5>
+                    <ul class="mt-4">
+                        <li>
+                            <h5 class="fw-bold">S-Health Portal</h5>
+                            <p class="mt-3">I developed this portal mainly for Students , who are preparign for their
+                                <strong> placements</strong>, you will find all the material for your preparation like
+                                video
+                                courses, text-based courses, technical interview questions, HR interview questions and
+                                practice sites, I've also added precautions and home solutions for some common health
+                                problems in students
+                            </p>
+                            <a class="text-decoration-none text-light" href="https://s-healthportal.netlify.app/"
+                                target="_blank">
+                                <button class="border-0 p-2 px-4 rounded-pill d-inline-block fw-bold visit-button">
+                                    Click
+                                    Here to
+                                    visit</button>
+                            </a>
+                        </li>
+                        <li class="mt-4">
+                            <h5 class="fw-bold">Music App</h5>
+                            <p>A Simple music player desingned usign HTML5, CSS, and Javascript, with all the
+                                functionalities, listen to your favourite music</p>
+                            <a class="text-decoration-none text-light" href="https://s-healthportal.netlify.app/"
+                                target="_blank">
+                                <button class="border-0 p-2 px-4 rounded-pill d-inline-block fw-bold visit-button">
+                                    Click
+                                    Here to
+                                    visit</button>
+                            </a>
+                        </li>
+                        <li class="mt-4">
+                            <h5 class="fw-bold">Dance Website</h5>
+                            <p>A responsive dance website desingned usign HTML5, CSS, and Javascript, which is I
+                                developed
+                                when i was started to learn web development</p>
+                            <a class="text-decoration-none text-light" href="https://rajeshjatav1.github.io/DanceWB/"
+                                target="_blank">
+                                <button class="border-0 p-2 px-4 rounded-pill d-inline-block fw-bold visit-button">
+                                    Click
+                                    Here to
+                                    visit</button>
+                            </a>
+                        </li>
+                        <li class="mt-4">
+                            <h5 class="fw-bold">Store Website</h5>
+                            <p>A Simple and responsive store website, which is I developed for my own <strong> Rajesh
+                                    Kirana
+                                    Store</strong> in my hometown</p>
+                            <a class="text-decoration-none text-light" href="https://rajeshjatav1.github.io/Myproject1/"
+                                target="_blank">
+                                <button class="border-0 p-2 px-4 rounded-pill d-inline-block fw-bold visit-button">
+                                    Click
+                                    Here to
+                                    visit</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                tabindex="0">
+                <div class="container">
+                    <div class="text-center mt-3">
+                        <img style="height: 100px;" src="emoji2.gif" alt="">
+                    </div>
+                    <p>A Very Big Thanks for coming till the end</p>
+                    <h5>You can contact me from various ways, it will be my pleasure to serve you</h5>
+                    <div class="d-flex align-items-center mt-3 border p-2 rounded-pill ps-3">
+                        <img class="me-2" style="height: 30px;" src="dialer.png" alt="">
+                        <p class="m-0"> Contact : <strong style="letter-spacing: 1px;">+91-8225921799</strong></p>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 border p-2 rounded-pill ps-3">
+                        <img class="me-2" style="height: 30px;" src="email.png" alt="">
+                        <p class="m-0"> Email : <strong style="letter-spacing: 1px;"><a
+                                    class="text-decoration-none text-light" href="mailto:rajeshjatav12345678@gmail.com">
+                                    rajeshjatav12345678@gmail.com</a></strong></p>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 border p-2 rounded-pill ps-3">
+                        <img class="me-2" style="height: 30px;" src="linkedin.png" alt="">
+                        <a class="text-decoration-none text-light" target="_blank"
+                            href="https://www.linkedin.com/in/rajesh-kumar-407a25224/">
+                            <p class="m-0"><strong> LinkedIn </strong></p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 border p-2 rounded-pill ps-3">
+                        <img class="me-2" style="height: 30px;" src="github.png" alt="">
+                        <a class="text-decoration-none text-light" target="_blank"
+                            href="https://github.com/rajeshjatav1">
+                            <p class="m-0"><strong> Git Hub </strong></p>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="d-lg-none d-block">
+        <div style="background-color: #14235e; font-weight: 900;"
+            class="py-3 d-flex justify-content-center align-items-center">
+            <h3 class="m-0 fw-bold">Rajesh's Portfolio</h3>
+        </div>
+        <div class="rounded-3 fw-bold d-flex text-center flex-column">
+            <div>
+                <img class="my-3 rounded-circle" style="height: 90px;" src="myimage.JPG" alt="">
+                <h3 class="fw-bold">Hii there,</h3>
+                <h4 class="fw-bold">My name is <span style="color: #9826bd;">Rajesh Kumar,</span></h4>
+                <h4 class="fw-bold">I am a passionate <span style="color: #9826bd;" id="element1"
+                        class="fw-bold"></span>
+                </h4>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <h5 class="text-center border p-2 px-3 mx-5 rounded-pill fw-bold my-3">More About Me</h5>
+            <p class="m-0">I have completed my high and higher secondary studies
+                from
+                <strong> Govt. School Of Excellence, Narsinghpur</strong>, I've gained <strong>
+                    88.5%</strong>
+                in 10th and <strong>81.6%</strong> in 12th.
+            </p>
+            <p> After that I've completed my engineering in <strong> Computer Science </strong> from
+                <strong>
+                    Shri Ram Institute of Science &
+                    Technologies, Jabalpur</strong>
+                During my academics
+                I've worked on
+                many
+                technologies.
+            </p>
+            <p class="m-0">
+                <span style="color: white;" class="fw-bold mt-1"> My technical skills includes</span>
+            </p>
+            <div class="border py-4 px-0 rounded-3 border-primary mt-4">
+                <div class="container1">
+                    <div class="d-flex">
+                        <div class="card rounded-circle me-2">
+                            <div class="percent" style="--cir:#04fc43;--num:80">
+                                <div class="dot">
+
+                                </div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2 class="m-0">80 <span>%</span></h2>
+                                    <p class="m-0">HTML</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card rounded-circle">
+                            <div class="percent" style="--cir:#04fc43;--num:70">
+                                <div class="dot">
+
+                                </div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2 class="m-0">70 <span>%</span></h2>
+                                    <p class="m-0">CSS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="card rounded-circle">
+                            <div class="percent" style="--cir:#04fc43;--num:60">
+                                <div class="dot">
+
+                                </div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2 class="m-0">60 <span>%</span></h2>
+                                    <p class="m-0">Java Script</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card rounded-circle">
+                            <div class="percent" style="--cir:#04fc43;--num:65">
+                                <div class="dot">
+
+                                </div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2 class="m-0">65 <span>%</span></h2>
+                                    <p class="m-0">React.js</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container1 mt-5">
+                    <div class="d-flex">
+                        <div class="card rounded-circle">
+                            <div class="percent" style="--cir:#04fc43;--num:85">
+                                <div class="dot">
+
+                                </div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2 class="m-0">85 <span>%</span></h2>
+                                    <p class="m-0">Bootstrap</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card rounded-circle">
+                            <div class="percent" style="--cir:#04fc43;--num:60">
+                                <div class="dot">
+
+                                </div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2 class="m-0">60 <span>%</span></h2>
+                                    <p class="m-0">C</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="card rounded-circle">
+                            <div class="percent" style="--cir:#04fc43;--num:65">
+                                <div class="dot">
+
+                                </div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2 class="m-0">65 <span>%</span></h2>
+                                    <p class="m-0">C++</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card rounded-circle">
+                            <div class="percent" style="--cir:#04fc43;--num:55">
+                                <div class="dot">
+
+                                </div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2 class="m-0">55 <span>%</span></h2>
+                                    <p class="m-0">SQL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <h5 class="text-center border p-2 px-3 mx-5 rounded-pill fw-bold my-3">My Projects</h5>
+            <div class="text-center mt-3">
+                <img style="height: 60px;" src="emoji2.gif" alt="">
+            </div>
+            <p class="text-center">You came very far, thanks</p>
+            <h6 class="text-center">Here's the list of some of my projects</h6>
+            <ul class="mt-3">
+                <li>
+                    <h6 class="fw-bold">S-Health Portal</h6>
+                    <p class="mt-1">I developed this portal mainly for Students , who are preparign for their
+                        <strong> placements</strong>, you will find all the material for your preparation like
+                        video
+                        courses, text-based courses, technical interview questions, HR interview questions and
+                        practice sites, I've also added precautions and home solutions for some common health
+                        problems in students
+                    </p>
+                    <a class="text-decoration-none text-light" href="https://s-healthportal.netlify.app/"
+                        target="_blank">
+                        <button class="border-0 p-1 px-3 rounded-pill d-inline-block fw-bold visit-button">
+                            Click
+                            Here to
+                            visit</button>
+                    </a>
+                </li>
+                <li class="mt-3">
+                    <h6 class="fw-bold">Music App</h6>
+                    <p>A Simple music player desingned usign HTML5, CSS, and Javascript, with all the
+                        functionalities, listen to your favourite music</p>
+                    <a class="text-decoration-none text-light" href="https://s-healthportal.netlify.app/"
+                        target="_blank">
+                        <button class="border-0 p-1 px-3 rounded-pill d-inline-block fw-bold visit-button">
+                            Click
+                            Here to
+                            visit</button>
+                    </a>
+                </li>
+                <li class="mt-3">
+                    <h6 class="fw-bold">Dance Website</h6>
+                    <p>A responsive dance website desingned usign HTML5, CSS, and Javascript, which is I
+                        developed
+                        when i was started to learn web development</p>
+                    <a class="text-decoration-none text-light" href="https://rajeshjatav1.github.io/DanceWB/"
+                        target="_blank">
+                        <button class="border-0 p-1 px-3 rounded-pill d-inline-block fw-bold visit-button">
+                            Click
+                            Here to
+                            visit</button>
+                    </a>
+                </li>
+                <li class="mt-3">
+                    <h6 class="fw-bold">Store Website</h6>
+                    <p>A Simple and responsive store website, which is I developed for my own <strong> Rajesh
+                            Kirana
+                            Store</strong> in my hometown</p>
+                    <a class="text-decoration-none text-light" href="https://rajeshjatav1.github.io/Myproject1/"
+                        target="_blank">
+                        <button class="border-0 p-1 px-3 rounded-pill d-inline-block fw-bold visit-button">
+                            Click
+                            Here to
+                            visit</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="container mt-4">
+            <h5 class="text-center border p-2 px-3 mx-5 rounded-pill fw-bold mt-4">Contact</h5>
+
+            <div class="text-center mt-1 text-center">
+                <img style="height: 100px;" src="emoji2.gif" alt="">
+            </div>
+            <p class="text-center">A Very Big Thanks for coming till the end</p>
+            <h6 class="text-center">You can contact me from various ways, it will be my pleasure to serve you</h6>
+            <div class="d-flex align-items-center mt-3 border p-2 rounded-pill ps-3">
+                <img class="me-2" style="height: 30px;" src="dialer.png" alt="">
+                <p class="m-0"> Contact : <strong style="letter-spacing: 1px;">+91-8225921799</strong></p>
+            </div>
+            <div class="d-flex align-items-center mt-3 border p-2 rounded-pill ps-3">
+                <img class="me-2" style="height: 30px;" src="email.png" alt="">
+                <p class="m-0"> Email : <strong style="letter-spacing: 1px;"><a class="text-decoration-none text-light"
+                            href="mailto:rajeshjatav12345678@gmail.com">
+                            rajeshjatav12345678@gmail.com</a></strong></p>
+            </div>
+            <div class="d-flex align-items-center mt-3 border p-2 rounded-pill ps-3">
+                <img class="me-2" style="height: 30px;" src="linkedin.png" alt="">
+                <a class="text-decoration-none text-light" target="_blank"
+                    href="https://www.linkedin.com/in/rajesh-kumar-407a25224/">
+                    <p class="m-0"><strong> LinkedIn </strong></p>
+                </a>
+            </div>
+            <div class="d-flex align-items-center mt-3 border p-2 rounded-pill ps-3">
+                <img class="me-2" style="height: 30px;" src="github.png" alt="">
+                <a class="text-decoration-none text-light" target="_blank" href="https://github.com/rajeshjatav1">
+                    <p class="m-0"><strong> Git Hub </strong></p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Web Designer'],
+        typeSpeed: 70,
+    });
+</script>
+<script>
+    var typed = new Typed('#element1', {
+        strings: ['Web Developer', 'Web Designer'],
+        typeSpeed: 70,
+    });
+</script>
+
+
+
+</html>

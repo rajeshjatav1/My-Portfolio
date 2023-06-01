@@ -1,0 +1,143 @@
+
+
+html,
+body {
+    font-family: "Poppins" !important;
+    color: white !important;
+    overflow-x: none;
+}
+.container1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.container1 .card{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background: #212c58;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1 .card .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.container1 .card .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+.container1 .card .percent svg circle{
+   width: 100%;
+   height: 100%;
+   fill: transparent;
+   stroke-width: 5;
+   stroke:#324792;
+   transform: translate(6px,6px) !important;
+}
+
+.container1 .card .percent svg circle:nth-child(2){
+    stroke: var(--cir);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    /* 360deg/100 = 3.6 */
+    animation: animateDot 2s linear forwards;
+}
+@keyframes animateDot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.dot::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: var(--cir);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--cir),0 0 30px var(--cir);
+}
+.number{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1.5s;
+}
+
+.number h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 1000;
+    font-size: 2.5em;
+}
+.number h2 span{
+    font-weight: 300;
+    color: white;
+    font-size: 0.6em;
+}
+
+.number p{
+   font-weight: 700;
+    font-size: 0.75em;
+    line-height: 2px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 2px;
+    margin-top: 10px !important;
+}
+.nav-link{
+    transition-property: all !important;
+    transition-duration: .3s !important;
+    margin: 2px;
+}
+.nav-link:hover{
+    font-size: 16px;
+    background-color: #324792;
+   
+}
+.visit-button{
+    transition-property: all !important;
+    transition-duration: .7s !important;   
+}
+.visit-button:hover{
+   background-color: antiquewhite !important;
+}
