@@ -73,6 +73,7 @@ body {
     }
     100%{
         transform: rotate(calc(3.6deg * var(--num)));
+        /* transform: rotate(360deg); */
     }
 }
 
