@@ -19,10 +19,10 @@
 
 </head>
 
-<body class="" style="background-color: #0a1333; font-family: Poppins,sans-serif;">
+<body class="" style="background-color: rgb(10, 19, 51); font-family: Poppins,sans-serif;">
     <div class="d-lg-block d-none" id="desktopscreen">
 
-        <div style="background-color: #14235e; font-weight: 900;" class="py-3 align-items-center">
+        <div id="navbar" style="background-color: #14235e; font-weight: 900;" class="py-3 align-items-center">
             <nav class="d-flex justify-content-between align-items-center px-4">
                 <h3 class="m-0 fw-bold">Rajesh's Portfolio</h3>
                 <div style="background-color: #172a74;" class=" p-2 rounded-2">
@@ -51,6 +51,13 @@
                 </div>
             </nav>
         </div>
+        <button onclick='toggleMode()' style="background: none; color: white; border: 1px solid white;" class="text-start ms-4 mt-2 rounded-3 p-2">
+            <div style="text-align: center; display: inline-block;" class="">
+                <div>
+                    <img class="p-1 rounded-circle" style="height: 30px; background-color: white;" id="toggle-img" src="light-mode.png" alt="">
+                </div>
+            </div>
+        </button>
 
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
@@ -364,10 +371,17 @@
         </div>
     </div>
     <div class="d-lg-none d-block">
-        <div style="background-color: #14235e; font-weight: 900;"
+        <div id="navbar-mobile" style="background-color: #14235e; font-weight: 900;"
             class="py-3 d-flex justify-content-center align-items-center">
             <h5 class="m-0 fw-bold">Rajesh's Portfolio</h5>
         </div>
+        <button onclick='toggleMode()' style="background: none; color: white; border: 1px solid white;" class="text-start ms-4 mt-2 rounded-3 p-2">
+            <div style="text-align: center; display: inline-block;" class="">
+                <div>
+                    <img class="p-1 rounded-circle" style="height: 30px; background-color: white;" id="toggle-img" src="light-mode.png" alt="">
+                </div>
+            </div>
+        </button>
         <div class="rounded-3 fw-bold d-flex text-center flex-column">
             <div>
                 <img class="my-2 rounded-circle" style="height: 90px;" src="myimage.JPG" alt="">
