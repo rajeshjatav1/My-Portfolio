@@ -3,8 +3,8 @@
 html,
 body {
     font-family: "Poppins" !important;
-    color: white !important;
     overflow-x: none;
+    color: white !important;
 }
 .container1{
     position: relative;
