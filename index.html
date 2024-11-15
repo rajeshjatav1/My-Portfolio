@@ -33,14 +33,14 @@
                                 aria-selected="true">Home</button>
                         </li>
                         <li class="nav-item" role="presentation">
+                            <button class="nav-link text-light" id="pills-experience-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-experience" type="button" role="tab"
+                                aria-controls="pills-experience" aria-selected="false">Experiece & Projects</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
                             <button class="nav-link text-light" id="pills-profile-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">About</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link text-light" id="pills-contact-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">Experiece & Projects</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link text-light" id="pills-disabled-tab" data-bs-toggle="pill"
@@ -51,10 +51,12 @@
                 </div>
             </nav>
         </div>
-        <button id="toggle-btn-1" onclick='toggleMode()' style="background: none; color: white; border: 1px solid white;" class="text-start ms-4 mt-2 rounded-3 p-2">
+        <button id="toggle-btn-1" onclick='toggleMode()'
+            style="background: none; color: white; border: 1px solid white;" class="text-start ms-4 mt-2 rounded-3 p-2">
             <div style="text-align: center; display: inline-block;" class="">
                 <div>
-                    <img class="p-1 rounded-circle" style="height: 30px; background-color: white;" id="toggle-img" src="light-mode.png" alt="">
+                    <img class="p-1 rounded-circle" style="height: 30px; background-color: white;" id="toggle-img"
+                        src="light-mode.png" alt="">
                 </div>
             </div>
         </button>
@@ -87,10 +89,6 @@
                 tabindex="0">
                 <div class="container my-3 mb-5">
                     <div>
-                        <div class="text-center">
-                            <img style="height: 60px;" src="emoji2.gif" alt="">
-                        </div>
-                        <p class="text-center">So Good to see you here,</p>
                         <p class="m-0">My Name is Rajesh Kumar, I have completed my high and higher secondary studies
                             from
                             <strong> Govt. School Of Excellence, Narsinghpur</strong>, I've gained <strong>
@@ -107,7 +105,8 @@
                             technologies.
                         </p>
                         <p class="m-0">
-                            <span style="color: white;" class="fw-bold mt-1 light-text"> My technical skills includes</span>
+                            <span style="color: white;" class="fw-bold mt-1 light-text"> My technical skills
+                                includes</span>
                         </p>
                     </div>
                     <div class="border py-4 px-0 rounded-3 border-primary mt-4">
@@ -241,37 +240,109 @@
 
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+            <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab"
                 tabindex="0">
-                <div class="container">
-                    <div class="text-center mt-3">
-                        <img style="height: 60px;" src="emoji2.gif" alt="">
-                    </div>
-                    <p class="text-center">You came very far, thanks</p>
+                <div class="container mt-4">
                     <h4 class="fw-bold">Experiece</h4>
-
-                    <h5 class="fw-bold">React Developer</h5>
-                    <p class="m-0 mb-1">Whooshelf Private Limited | Feb 2023 to June 2023</p>
-                    <ul>
-                        <li>
-                            Developing responsive user interface using <strong> Bootstrap</strong>
-                        </li>
-                        <li>
-                            Developing new user-facing features using React.js
-                        </li>
-                        <li>
-                            Building reusable components and front-end libraries for future use
-                        </li>
-                        <li>
-                            Monitoring and improving front-end performance.
-                        </li>
-                    </ul>
-
+                    <div class="experience-list-element">
+                        <h5 class="fw-bold">Web Developer</h5>
+                        <p class="m-0 mb-1">Codeholic IT Service Pvt. Ltd | June 2023 to current</p>
+                        <div>
+                            <ul>
+                                <li>
+                                    Develop interactive UIs and add required
+                                    functionalities.
+                                </li>
+                                <li>
+                                    Maintain, debug and enhance features across
+                                    multiple projects.
+                                </li>
+                                <li>
+                                    Regularly Collaborate with clients to resolve issues and
+                                    provide tailored solutions.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-list-element">
+                        <h5 class="fw-bold">React Developer</h5>
+                        <p class="m-0 mb-1">Whooshelf Private Limited | Feb 2023 to June 2023</p>
+                        <ul>
+                            <li>
+                                Developing responsive user interface using <strong> Bootstrap</strong>
+                            </li>
+                            <li>
+                                Developing new user-facing features using React.js
+                            </li>
+                            <li>
+                                Building reusable components and front-end libraries for future use
+                            </li>
+                            <li>
+                                Monitoring and improving front-end performance.
+                            </li>
+                        </ul>
+                    </div>
                     <hr>
                     <h4 class="fw-bold">Projects</h4>
-                    <h6>Here's the list of some of my personal projects</h6>
                     <ul class="mt-4">
                         <li>
+                            <h5 class="fw-bold">Agora Meter</h5>
+                            <p class="mt-3">
+                                A data visualization project which shows the
+                                live changes in German power consumption.
+                            </p>
+                            <p class="mt-1">
+                                <strong>Tech Stack - </strong>HTML, CSS, Javascript, jQuery, Django, Github,
+                                Flourish, CI/CD.
+                            </p>
+                            <a class="text-decoration-none text-light"
+                                href="https://agora-energiewende.org/data-tools/agorameter/chart/today/power_generation/08.11.2024/11.11.2024/hourly"
+                                target="_blank">
+                                <button class="border-0 p-2 px-4 rounded-pill d-inline-block fw-bold visit-button">
+                                    Click
+                                    Here to
+                                    visit
+                                </button>
+                            </a>
+                        </li>
+                        <li class="mt-4">
+                            <h5 class="fw-bold">Homefans</h5>
+                            <p class="mt-3">
+                                A huge sports experience marketplace in
+                                Netherlands with 500+ sports activities and 8000+ active users
+                                which offers an authentic sports experience to travelers.
+                            </p>
+                            <p class="mt-1">
+                                <strong>Tech Stack - </strong>HTML, CSS, Javascript, jQuery, Wordpress, PHP,
+                                AJAX, Google APIs, Mailchimp.
+                            </p>
+                            <a class="text-decoration-none text-light" href="https://homefans.net/" target="_blank">
+                                <button class="border-0 p-2 px-4 rounded-pill d-inline-block fw-bold visit-button">
+                                    Click
+                                    Here to
+                                    visit
+                                </button>
+                            </a>
+                        </li>
+                        <li class="mt-4">
+                            <h5 class="fw-bold">Code CMS</h5>
+                            <p class="mt-3">
+                                A task management system allows users to create
+                                and manage multiple organizations, tasks, and projects.
+                            </p>
+                            <p class="mt-1">
+                                <strong>Tech Stack - </strong>HTML, CSS, Javascript, React.js, Redux, Git,
+                                Github, CI/CD.
+                            </p>
+                            <a class="text-decoration-none text-light" href="https://homefans.net/" target="_blank">
+                                <button class="border-0 p-2 px-4 rounded-pill d-inline-block fw-bold visit-button">
+                                    Click
+                                    Here to
+                                    visit
+                                </button>
+                            </a>
+                        </li>
+                        <li class="mt-4">
                             <h5 class="fw-bold">S-Placement Portal</h5>
                             <p class="mt-3">I developed this portal mainly for Students , who are preparign for their
                                 <strong> placements</strong>, you will find all the material for your preparation like
@@ -375,10 +446,12 @@
             class="py-3 d-flex justify-content-center align-items-center">
             <h5 class="m-0 fw-bold">Rajesh's Portfolio</h5>
         </div>
-        <button id="toggle-btn" onclick='toggleMode()' style="background: none; color: white; border: 1px solid white;" class="text-start ms-4 mt-2 rounded-3 p-2">
+        <button id="toggle-btn" onclick='toggleMode()' style="background: none; color: white; border: 1px solid white;"
+            class="text-start ms-4 mt-2 rounded-3 p-2">
             <div style="text-align: center; display: inline-block;" class="">
                 <div>
-                    <img class="p-1 rounded-circle" style="height: 30px; background-color: white;" id="toggle-img-mobile" src="light-mode.png" alt="">
+                    <img class="p-1 rounded-circle" style="height: 30px; background-color: white;"
+                        id="toggle-img-mobile" src="light-mode.png" alt="">
                 </div>
             </div>
         </button>
@@ -554,6 +627,24 @@
         <hr>
         <div class="container">
             <h6 class="text-center border p-2 px-3 mx-5 rounded-pill fw-bold my-3">Experiece</h6>
+            <h5 class="fw-bold ms-2">Web Developer</h5>
+            <p class="m-0 mb-1 ms-2">Codeholic IT Service Pvt. Ltd | June 2023 to current</p>
+            <div>
+                <ul>
+                    <li>
+                        Develop interactive UIs and add required
+                        functionalities.
+                    </li>
+                    <li>
+                        Maintain, debug and enhance features across
+                        multiple projects.
+                    </li>
+                    <li>
+                        Regularly Collaborate with clients to resolve issues and
+                        provide tailored solutions.
+                    </li>
+                </ul>
+            </div>
             <h5 class="fw-bold ms-2">React Developer</h5>
             <p class="m-0 mb-1 ms-2">Whooshelf Private Limited | Feb 2023 to June 2023</p>
             <ul>
@@ -574,13 +665,65 @@
         <hr>
         <div class="container">
             <h6 class="text-center border p-2 px-3 mx-5 rounded-pill fw-bold my-3">My Projects</h6>
-            <div class="text-center mt-3">
-                <img style="height: 60px;" src="emoji2.gif" alt="">
-            </div>
-            <p class="text-center">You came very far, thanks</p>
-            <h6 class="text-center">Here's the list of some of my projects</h6>
             <ul class="mt-3">
                 <li>
+                    <h6 class="fw-bold">Agora Meter</h6>
+                    <p>
+                        A data visualization project which shows the
+                        live changes in German power consumption.
+                    </p>
+                    <p >
+                        <strong>Tech Stack - </strong>HTML, CSS, Javascript, jQuery, Django, Github,
+                        Flourish, CI/CD.
+                    </p>
+                    <a class="text-decoration-none text-light"
+                        href="https://agora-energiewende.org/data-tools/agorameter/chart/today/power_generation/08.11.2024/11.11.2024/hourly"
+                        target="_blank">
+                        <button class="border-0 p-2 px-4 rounded-pill d-inline-block fw-bold visit-button">
+                            Click
+                            Here to
+                            visit
+                        </button>
+                    </a>
+                </li>
+                <li class="mt-3">
+                    <h6 class="fw-bold">Homefans</h6>
+                    <p>
+                        A huge sports experience marketplace in
+                        Netherlands with 500+ sports activities and 8000+ active users
+                        which offers an authentic sports experience to travelers.
+                    </p>
+                    <p>
+                        <strong>Tech Stack - </strong>HTML, CSS, Javascript, jQuery, Wordpress, PHP,
+                        AJAX, Google APIs, Mailchimp.
+                    </p>
+                    <a class="text-decoration-none text-light" href="https://homefans.net/" target="_blank">
+                        <button class="border-0 p-2 px-4 rounded-pill d-inline-block fw-bold visit-button">
+                            Click
+                            Here to
+                            visit
+                        </button>
+                    </a>
+                </li>
+                <li class="mt-3">
+                    <h6 class="fw-bold">Code CMS</h6>
+                    <p>
+                        A task management system allows users to create
+                        and manage multiple organizations, tasks, and projects.
+                    </p>
+                    <p>
+                        <strong>Tech Stack - </strong>HTML, CSS, Javascript, React.js, Redux, Git,
+                        Github, CI/CD.
+                    </p>
+                    <a class="text-decoration-none text-light" href="https://homefans.net/" target="_blank">
+                        <button class="border-0 p-2 px-4 rounded-pill d-inline-block fw-bold visit-button">
+                            Click
+                            Here to
+                            visit
+                        </button>
+                    </a>
+                </li>
+                <li class="mt-3">
                     <h6 class="fw-bold">S-Placement Portal</h6>
                     <p class="mt-1">I developed this portal mainly for Students , who are preparign for their
                         <strong> placements</strong>, you will find all the material for your preparation like
@@ -665,7 +808,8 @@
             </div>
             <div class="d-flex align-items-center mt-3 border p-2 rounded-pill ps-3">
                 <img class="me-2" style="height: 30px;" src="github.png" alt="">
-                <a style="color: white;" class="text-decoration-none light-text" target="_blank" href="https://github.com/rajeshjatav1">
+                <a style="color: white;" class="text-decoration-none light-text" target="_blank"
+                    href="https://github.com/rajeshjatav1">
                     <p class="m-0"><strong> Git Hub </strong></p>
                 </a>
             </div>
